@@ -2,14 +2,12 @@
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 import autoprefixer from 'autoprefixer';
-import faviconsPlugin from 'vite-plugin-favicon';
-import tailwindPlugin from 'vite-plugin-tailwind';
+import faviconPlugin from 'vite-plugin-favicons-inject';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     eslint(),
-    faviconsPlugin(),
-    tailwindPlugin(),
+    faviconPlugin('./src/img/dog.jpeg'),
   ],
   css: {
     postcss: {
