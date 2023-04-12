@@ -1,0 +1,22 @@
+{
+  "name": "starterpack-sofiapjayaswal",
+  "version": "1.0.0",
+  "description": "SA2",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dartmouth-cs52-23s/starterpack-sofiapjayaswal.git"
+  },
+  "author": "Sofia Jayaswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dartmouth-cs52-23s/starterpack-sofiapjayaswal/issues"
+  },
+  "homepage": "https://github.com/dartmouth-cs52-23s/starterpack-sofiapjayaswal#readme",
+  "devDependencies": {
+    "vite": "^4.2.1"
+  }
+}
