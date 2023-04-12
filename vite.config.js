@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 import autoprefixer from 'autoprefixer';
 import faviconPlugin from 'vite-plugin-favicons-inject';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
