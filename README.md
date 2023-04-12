@@ -9,5 +9,6 @@ In this assignment, I created a frontend starter pack using Vite. The pack uses 
 ## What Didn't
   I had a small error where it said 'vite-plugin-eslint' was an unresolved reference but I quickly resolved this through installing it. 
 ## Extra Credit
-  I installed NVM. See screenshot below for an example of me using it. 
+  I installed NVM. See screenshot below for an example of me using it. I also installed Vite plugins for favicon generation and tailwind. (see Vite config file and dev dependencies in package.json)
 ## Screenshots
+<img width="1440" alt="Screenshot 2023-04-12 at 12 37 35 PM" src="https://user-images.githubusercontent.com/98844602/231525972-664c778f-2f13-4ec1-a895-e8f18e89c2c4.png">
