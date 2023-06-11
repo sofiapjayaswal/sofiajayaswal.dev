@@ -8,7 +8,7 @@ import faviconPlugin from 'vite-plugin-favicons-inject';
 export default defineConfig({
   plugins: [
     eslint(),
-    faviconPlugin('./src/img/dog.jpeg'),
+    faviconPlugin('./src/img/logo.png'),
   ],
   css: {
     postcss: {
