@@ -164,6 +164,50 @@ hr {
   }
 }
 
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .experience-title {
+    color:#40513B;
+    font-size: 3em;
+    margin-top: 0;
+  }
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .timeline {
+      width: 70vw;
+      .chrono-timeline {
+        width: 70vw;
+        pointer-events: none;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      h1 {
+        color:#40513B;
+      }
+      img {
+        width: 8vw;
+        padding: 0.5vh 1vw 0.5vh 1vw;
+      }
+      .skills-list {
+        display: flex;
+        align-items: center;
+        .css {
+          width: 6.7vw;
+        }
+      }
+    }
+  }
+}
 
 :root {
   text-size-adjust: 100%;

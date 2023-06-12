@@ -1,5 +1,12 @@
 import React from 'react';
 import { Chrono } from 'react-chrono';
+import reactIcon from '../img/react.svg';
+import jsIcon from '../img/javascript.svg';
+import cIcon from '../img/c.svg';
+import javaIcon from '../img/java.svg';
+import htmlIcon from '../img/html5.svg';
+import cssIcon from '../img/css.svg';
+import pythonIcon from '../img/python.svg';
 
 function Experience() {
   const items = [{
@@ -32,24 +39,50 @@ function Experience() {
   const timelineFontSizes = {
     title: '1.3rem',
     cardTitle: '1.8rem',
-    cardSubtitle: '1.5rem',
+    cardSubtitle: '1.3rem',
     cardText: '10rem',
   };
 
   const timelineColors = {
     primary: '#609966',
-    secondary: '#40513B',
-    cardBgColor: '#609966',
-    cardForeColor: '#40513B',
+    secondary: '#EDF1D6',
+    cardBgColor: '#9DC08B',
     titleColor: '#609966',
+    titleColorActive: '#609966',
+    cardTitleColor: '#40513B',
+    cardSubtitleColor: '#609966',
   };
+
   return (
     <div id="experience">
       {/* <div id="timeline">
         <Chrono items={items} slideShow mode="VERTICAL" theme={timelineColors} fontSizes={timelineFontSizes} hideControls lineWidth={5} activeItemIndex={-1} useReadMore={false} />
       </div> */}
-      <div style={{ width: '1000px', height: '1000px' }}>
-        <Chrono items={items} mode="VERTICAL" slideshow theme={timelineColors} fontSizes={timelineFontSizes} hideControls lineWidth={5} />
+      <h2 className="experience-title">My Experiences</h2>
+      <div className="experience-content">
+        <div className="timeline">
+          <Chrono className="chrono-timeline"
+            items={items}
+            mode="VERTICAL"
+            slideshow
+            theme={timelineColors}
+            fontSizes={timelineFontSizes}
+            hideControls
+            lineWidth={5}
+          />
+        </div>
+        <div className="skills">
+          <h1>Languages</h1>
+          <div className="skills-list">
+            <img src={reactIcon} alt="" />
+            <img src={jsIcon} alt="" />
+            <img src={cIcon} alt="" />
+            <img src={javaIcon} alt="" />
+            <img src={htmlIcon} alt="" />
+            <img src={cssIcon} alt="" className="css" />
+            <img src={pythonIcon} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );
