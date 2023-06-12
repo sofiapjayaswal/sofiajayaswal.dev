@@ -1,5 +1,7 @@
 import React from 'react';
-// import About from './about';
+import About from './about';
+import Experience from './experience';
+// import Experience from './experience';
 // import Experience from './experience';
 import Header from './header';
 import Home from './home';
@@ -10,7 +12,8 @@ function App() {
       <Header />
       <div id="content">
         <Home />
-
+        <About />
+        <Experience />
       </div>
     </div>
   );
