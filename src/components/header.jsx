@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import logo from '../img/logo.png';
+import resume from '../img/resume.pdf';
 
 function Header() {
   return (
@@ -21,7 +22,7 @@ function Header() {
         {/* <Link activeClass="itemActive" to="projects" spy={true} smooth={true} offset={-70} duration={500} style={{color: 'FFFFFF'}}>
           <div className="HeaderItem"> Projects </div>
         </Link> */}
-        <a href="/" target="_blank" rel="noreferrer" className="nav-item">Resume</a>
+        <a href={resume} target="_blank" rel="noreferrer" className="nav-item">Resume</a>
       </div>
     </div>
   );
