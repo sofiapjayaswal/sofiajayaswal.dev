@@ -106,7 +106,7 @@ hr {
   border: #40513B solid 0.8px;
 }
 
-.home {
+#home-content {
   width: 100vw;
   padding-top: 10vh;
   display: flex;
@@ -129,7 +129,7 @@ hr {
   }
 }
 
-#about {
+#about-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -168,7 +168,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-bottom: 5vh;
   .experience-title {
     color:#40513B;
     font-size: 3em;
@@ -209,6 +209,28 @@ hr {
   }
 }
 
+#footer {
+  display: flex;
+  background-color: #40513B;
+  color:#EDF1D6;
+  padding: 1vh 3vw 1vh 3vw;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  #links {
+    width: 40vw;
+
+    img {
+      width: 4vw;
+      margin-left: 2%;
+    }
+  }
+  .footer-text {
+    font-size: 1.5em;
+    color: #EDF1D6;
+    text-decoration: none;
+  }
+}
 :root {
   text-size-adjust: 100%;
 }

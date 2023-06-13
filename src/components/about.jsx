@@ -3,8 +3,8 @@ import profile from '../img/profile.jpg';
 
 function About() {
   return (
-    <div>
-      <div id="about">
+    <div id="about">
+      <div id="about-content">
         <div id="about-image">
           <img src={profile} alt="" />
         </div>

@@ -4,8 +4,8 @@ import portrait from '../img/self-portrait.png';
 
 function Home() {
   return (
-    <div>
-      <div className="home">
+    <div id="home">
+      <div id="home-content">
         <div className="home-text-section">
           <h2>Welcome! My name is...</h2>
           <TypeAnimation

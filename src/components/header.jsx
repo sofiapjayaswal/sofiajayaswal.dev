@@ -10,7 +10,7 @@ function Header() {
         <Link activeClass="item-active" to="home" spy smooth duration={500}>
           <div className="nav-item">Home</div>
         </Link>
-        <Link activeClass="item-active" to="about" spy smooth offset={-70} duration={500}>
+        <Link activeClass="item-active" to="about" spy smooth offset={-100} duration={500}>
           <div className="nav-item">About</div>
         </Link>
         <Link activeClass="item-active" to="experience" spy smooth offset={-70} duration={500}>

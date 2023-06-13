@@ -8,7 +8,7 @@ import faviconPlugin from 'vite-plugin-favicons-inject';
 export default defineConfig({
   plugins: [
     eslint(),
-    faviconPlugin('./src/img/logo.png'),
+    faviconPlugin('./src/img/logo_dark.png'),
   ],
   css: {
     postcss: {
