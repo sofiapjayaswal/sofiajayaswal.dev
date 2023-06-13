@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 function Header() {
   return (
     <div className="nav-bar">
-      <Link activeClass="item-active" to="home" spy smooth offset={-150} duration={500}>
+      <Link className="nav-logo" activeClass="item-active" to="home" spy smooth offset={-150} duration={500}>
         <img src={logo} alt="" />
       </Link>
       <div className="nav-links">

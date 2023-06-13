@@ -5,8 +5,6 @@ body, html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
-
 .nav-bar {
   box-sizing: border-box;
   width: 100%;
@@ -126,7 +124,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh; 
   .experience-title {
     color:#40513B;
     font-size: 3em;
@@ -137,7 +135,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     .timeline {
-      width: 70vw;
+      width: 90vw;
       .chrono-timeline {
         width: 70vw;
         pointer-events: none;
@@ -146,7 +144,7 @@ hr {
 
     .skills {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       
       h1 {
@@ -159,6 +157,7 @@ hr {
       .skills-list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .css {
           width: 5.7vw;
         }
@@ -189,6 +188,95 @@ hr {
     text-decoration: none;
   }
 }
+
 :root {
   text-size-adjust: 100%;
+}
+
+/* for narrower screens */
+@media only screen and (max-width: 640px) {
+  .nav-bar {
+    width: 100vw;
+    padding: 2vh 2vw 2vh 2vw;
+    .nav-links {
+      width: 100vw;
+      font-size: 0.8em;
+    }
+  }
+  .nav-logo {
+    display: none;
+  }
+  #content {
+    padding-top: 10vh;
+  }
+  #home-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    text-align: left;
+    padding: 0 1vw 0 1vw;
+    .home-text-section {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+    }
+    img {
+      width: 40vw;
+    }
+  }
+  #about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #about-image{
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 50vw;
+        border-radius: 5%;
+      }
+    }
+    #about-text {
+      color:#40513B;
+      width: 80vw;
+      font-size: 1.2em;
+      text-align: center;
+      h1 {
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #609966;
+      }
+      p {
+        font-size: 0.8em
+      }
+      #about-email {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .skills {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  #footer {
+    font-size: 0.5em;
+
+    #links {
+      width: 40vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 6vw;
+        margin-left: 2vw;
+      }
+    }
+  }
 }
