@@ -6,26 +6,14 @@ body, html {
     font-size: 16px;
 }
 
-#main {
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-  text-align: center;
-  width: 100vw;
-}
 
 .nav-bar {
   box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap:5%;
   align-items: center;
-  padding: 1em 1em 1em 3em;
-  margin-bottom: 2em;
+  padding: 1em 1em 1em 2em;
   padding-bottom: 1.5em;
   background-color: #40513B;
   position: fixed;
@@ -33,6 +21,7 @@ body, html {
   
   img {
     width: 6vw;
+    cursor: pointer;
   }
 
   .nav-links {
@@ -42,11 +31,16 @@ body, html {
     color: #EDF1D6;
     
     .item-active {
-      text-decoration: underline!important;
+      color: #609966;
+      transform: scale(1.1);
     }
     .nav-item{
       cursor: pointer;
       font-size: 1.3em;
+    }
+
+    .nav-item:hover {
+      transform: scale(1.1);
     }
 
   
@@ -63,44 +57,7 @@ body, html {
 #content {
   padding-top: 8em;
 }
-// #nav-bar {
-//   width: 100%;
-//   position: fixed;
-//   z-index: 99;
-//   background-color:#40513B;
-//   color: #EDF1D6; 
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 1em 1em 1em 3em;
-//   img {
-//     width: 6vw;
-//   }
-//   ul {
-//     display: flex;
-//     flex-direction: row;
-//     list-style: none;
-//     justify-content: flex-end;
-//     padding: 0;
-//     font-size: 1.2em;
-//   }
 
-//   li {
-//     margin-right: 90px;
-//     a {
-//       text-decoration: none;
-//     }
-//   }
-
-//   li a:active {
-//     color:#609966;
-//   }
-
-//   li a:visited {
-//     text-decoration: none;
-//     color:#EDF1D6;
-//   }
-// }
 hr {
   margin: 7vh 5vh 7vh 5vh;
   border: #40513B solid 0.8px;
@@ -140,7 +97,8 @@ hr {
     display: flex;
     justify-content: center;
     img {
-      width: 30vw
+      width: 30vw;
+      border-radius: 5%;
     }
   }
 
@@ -195,14 +153,14 @@ hr {
         color:#40513B;
       }
       img {
-        width: 8vw;
+        width: 7vw;
         padding: 0.5vh 1vw 0.5vh 1vw;
       }
       .skills-list {
         display: flex;
         align-items: center;
         .css {
-          width: 6.7vw;
+          width: 5.7vw;
         }
       }
     }
@@ -212,17 +170,17 @@ hr {
 #footer {
   display: flex;
   background-color: #40513B;
-  color:#EDF1D6;
   padding: 1vh 3vw 1vh 3vw;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
   #links {
     width: 40vw;
-
+    display: flex;
+    justify-content: center;
     img {
       width: 4vw;
-      margin-left: 2%;
+      margin-left: 3vw;
     }
   }
   .footer-text {
